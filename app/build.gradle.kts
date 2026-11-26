@@ -50,5 +50,5 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
     // Carregar imagens da internet
-    implementation("io.coil-kt:coil-compose:2.6.1")
+    implementation("io.coil-kt:coil-compose:2.6.0")
 }
