@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.eliseu.animedex"
+    namespace = "com.eliseu.pokedex"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.eliseu.animedex"
+        applicationId = "com.eliseu.pokedex"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

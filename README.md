@@ -1,12 +1,12 @@
-# AnimeDex (Kotlin)
+# PokeDex (Kotlin)
 
-App Android feito em Kotlin com Jetpack Compose que consome a API pública [Jikan](https://docs.api.jikan.moe) (dados do MyAnimeList). Não precisa de chave de API.
+App Android feito em Kotlin com Jetpack Compose que consome a API pública [PokéAPI](https://pokeapi.co). Não precisa de chave de API.
 
 ## Funcionalidades
 
-- Lista dos animes mais bem avaliados
-- Busca por nome
-- Tela de detalhes (nota, episódios, ano, status, gêneros e sinopse)
+- Lista de pokémons com imagem
+- Busca por nome ou número enquanto digita
+- Tela de detalhes (tipos, altura, peso, habilidades e atributos base)
 - Estados de carregamento, erro (com botão "Tentar de novo") e lista vazia
 
 ## Tecnologias
@@ -19,10 +19,10 @@ App Android feito em Kotlin com Jetpack Compose que consome a API pública [Jika
 
 ## Estrutura
 
-- `data/JikanApi.kt`: interface Retrofit com os endpoints `top/anime` e `anime?q=`
+- `data/PokeApi.kt`: interface Retrofit com os endpoints `pokemon` e `pokemon/{id}`
 - `data/Models.kt`: classes que representam o JSON da API
-- `AnimeViewModel.kt`: busca os dados e guarda o estado da tela
-- `AnimeApp.kt`: telas (lista, card e detalhes)
+- `PokeViewModel.kt`: busca os dados e guarda o estado das telas
+- `PokeApp.kt`: telas (lista, card e detalhes)
 - `MainActivity.kt`: ponto de entrada
 
 ## Como rodar
@@ -31,4 +31,4 @@ App Android feito em Kotlin com Jetpack Compose que consome a API pública [Jika
 2. Aguarde o Gradle sincronizar
 3. Rode em um emulador ou celular com Android 7.0 (API 24) ou superior
 
-API usada: `https://api.jikan.moe/v4/`
+API usada: `https://pokeapi.co/api/v2/`
